@@ -24,14 +24,14 @@ jobs:
         run: dotnet restore
 
       - name: Publish
-        run: dotnet publish VintagestoryBugBot/VintagestoryBugBot.csproj --configuration Release  --runtime linux-x64 --no-self-contained -o VintagestoryBugBot
+        run: dotnet publish VintagestoryBugBot/VintagestoryBugBot.csproj --configuration Release  --runtime linux-x64 --no-self-contained -o out
 
       - name: Archive Release
         uses: thedoctor0/zip-release@0.7.1
         with:
           type: tar
           filename: VintagestoryBugBot-linux-x64.tar.gz
-          path: VintagestoryBugBot
+          path: out/*
 
       - name: Release
         uses: softprops/action-gh-release@v1
