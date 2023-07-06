@@ -24,7 +24,7 @@ jobs:
         run: dotnet restore
 
       - name: Publish
-        run: dotnet publish VintagestoryBugBot/VintagestoryBugBot.csproj --configuration Release  --runtime linux-x64 --no-self-contained -o out
+        run: dotnet publish VintagestoryBugBot/VintagestoryBugBot.csproj --configuration Release  --runtime linux-x64 --no-self-contained -o VintagestoryBugBot
 
       - name: Archive Release
         uses: thedoctor0/zip-release@0.7.1
