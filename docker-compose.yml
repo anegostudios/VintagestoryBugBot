@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  vintagestorybugbot:
+    image: ghcr.io/anegostudios/vintagestorybugbot:latest
+    environment:
+      GH_OWNER: ""
+      GH_NAME: ""
+      GH_APP_KEY: ""
+      GH_APP_ID: ""
+      GH_INSTALL_ID: 0
+      DC_GUILD_ID: 0
+      DC_CHANNEL_ID: 0
+      DC_TOKEN: ""
+      DC_REPORTER_ROLE_IDS: 0
+    command: ["dotnet", "/VintagestoryBugBot/.dll"]
+
+
+ 

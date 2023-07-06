@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="UserContentModel">
+    <attachedFolders />
+    <explicitIncludes>
+      <Path>.github</Path>
+      <Path>.gitignore</Path>
+      <Path>.idea</Path>
+      <Path>Dockerfile</Path>
+      <Path>README.md</Path>
+      <Path>config.json.example</Path>
+      <Path>docker-compose.yml</Path>
+      <Path>publish.bat</Path>
+      <Path>publish.sh</Path>
+    </explicitIncludes>
+    <explicitExcludes />
+  </component>
+</project>
